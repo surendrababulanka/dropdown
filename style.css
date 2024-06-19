@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(85, 120, 151);
+}
+.searchbar{
+    display: flex;
+    align-items:center ;
+    background-color: white;
+    min-width: 700px;
+    border-radius: 50px;
+}
+.dropdown{
+    position: relative;
+    width: 280px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.dropdown-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 10px 15px ;
+}
+.dropdown-list{
+    position: absolute;
+    top:4rem;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    background-color: beige;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+}
+#list.show{
+    max-height: 300px;
+}
+.list{
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-right: 10px;
+    outline: none;
+}
+.searchbox input{
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
